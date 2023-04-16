@@ -12,7 +12,7 @@
     <span>Книга сейчас у: </span> <span th:text="${owner.getFullName()}">Person Name</span>
 
     <form th:method="PATCH" th:action="@{/books/{id}/release(id=${book.getId()})}">
-        <input type="submit" value="Освободить книгу"/>
+        <input type="submit" value="Free book"/>
     </form>
 </div>
 
